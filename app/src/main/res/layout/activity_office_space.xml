@@ -1,0 +1,2703 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nk.grpapl.Office_space">
+
+    <LinearLayout
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/mainheading">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorwhite"
+                        android:layout_margin="5dp"
+                        android:id="@+id/usage"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Usage"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+
+                    <Spinner
+                        android:background="@drawable/spinner_background"
+                        android:id="@+id/officespaceusage"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorwhite"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/BuildingSpecificationofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Building Specification"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/BuildingNameofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Building Name"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Addressofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Address"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/cityofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="City"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Stateofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="State"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/pinofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Pin"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorwhite"
+                        android:layout_margin="5dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:id="@+id/geoloaction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GeoLocation" />
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/latitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:ems="10"
+                            android:editable="false"
+                            android:hint="Latitude"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/longitute"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Longitude"
+                            android:editable="false"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+                 </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:id="@+id/totalnumberfloorofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Number of Floor (including Ground)"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/totalnumberfloorofficespaceindex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Total Number of Floor (including Ground)"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorwhite"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/totalnumberofbasementofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Number of Basement"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Totalnumberofbasementindex11"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Total Number of Basement"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/Totalareaofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Total Area(in sq.ft.)"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Totalareaofficespaceindex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Total Area(In sq.ft.)"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorwhite"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/typicalfloorareaofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Typical Floor Area(in sq.ft.) "
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/typicalfloorareaofficespaceindex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Typical Floor Area(in sq.ft.)"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/efficiancyofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Efficiency(in %)"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/efficiancyofficespaceindex"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Efficiency(in %)"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/ProvisionforSignageBoard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Provision for Signage/Board"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/ProvisionforSignageBoardindex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Provision for Signage/Board"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/ProposedSolution"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Proposed Solution"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/ProposedSolutionindex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Proposed Solution"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorwhite"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/RentforSignageBoard"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rent for Signage/Board (INR / Month)"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/RentforSignageBoardindex"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Rent for Signage/Board (INR / Month)"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/OptionAddressofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Option Address"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/UnitNumberofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Unit Number"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/FloorNumberofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Floor Number"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/TowerNumberofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Tower Number"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/OptionDetailsofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Option Details"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/TotalLeasableAreaSuperAreaofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Total Leasable Area - Super Area (in sq.ft.)"
+                        android:inputType="textPersonName" />
+               </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/TotalUsableAreaCarpetAreaofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Total Usable Area - Carpet Area (in sq.ft.)"
+                        android:inputType="textPersonName" />
+                  </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Efficiencyofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Efficiency"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/FloorPlanofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Floor Plan"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/CommonAreaMaintenanceofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Common Area Maintenance "
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Chargesofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Charges (INR / sq.ft. / month)"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/HoursofOperationofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Hours of Operation"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/ChargesbeyondOperationsHoursofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Charges beyond Operations Hours (INR / sq.ft. / hour)"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/CarParkingofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Car Parking"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/FreeCarParkingofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Free Car Parking (Parking per sq.ft. leased)"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/AdditionalCarParkingChargesofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Additional Car Parking Charges (INR / car / month)"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/Statusofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Status"
+                        android:textSize="18sp"/>
+                </android.support.v7.widget.CardView>
+
+                    <Spinner
+                        android:id="@+id/Status"
+                        android:background="@drawable/spinner_background"
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp">
+                    </Spinner>
+
+
+                <LinearLayout
+                    android:id="@+id/bareshellorwarmshell"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/buttonbacground"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/IFBareShellORWarmShellofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="IF Bare-Shell OR Warm-Shell"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/AirConditioningofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Air Conditioning"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/ElectricityChargesofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Electricity Charges (per unit)"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/PowerBackupofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Power backup"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Restroomofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Restroom"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/InteriorFitOutsofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Interior / Fit-Outs"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/LLReadytodothefitouts"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="LL Ready to do the fit-outs"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <RadioGroup
+                    android:id="@+id/group1"
+                    android:theme="@style/Custom.TextInputLayout1"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/llyes1"
+                            android:layout_weight="1"
+                            android:textSize="14dp"
+                            android:text="Yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/llno1"
+                            android:textSize="14dp"
+                            android:layout_weight="1"
+                            android:text="No"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                 </RadioGroup>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/ProposedBudgetofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Proposed Budget (INR per sq.ft.)"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/TimelineofHandoverofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Timeline of Handover (in Days)"
+                            android:inputType="textPersonName" />
+                  </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/Lockinofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Lock in (in Years)"
+                            android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/AdditionalRentforFitOutofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Additional Rent for Fit-Out (INR / sq.ft. / month)"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/QuotedRentforBareShellWarmShellofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Quoted Rent for Bare-Shell / Warm-Shell (INR / sq.ft. / month)"
+                            android:inputType="textPersonName" />
+               </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:id="@+id/iffurnished"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/buttonbacground"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textStyle="bold"
+                            android:id="@+id/IFFurnishedofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="IF Furnished"
+                            android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/SizeofWorkstationofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Size of Workstation"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/NumberofCabinsofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Number of Cabins"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/NumberofMeetingRoomofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Number of Meeting Room"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/NumberofConferenceRoomofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Number of Conference Room"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/NumberofWorkstationsofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Number of Workstations"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/BreakoutAreaofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Break-out Area"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                        <Button
+                            android:layout_marginTop="15dp"
+                            android:background="#FF9C00"
+                            android:id="@+id/interiorofficespace"
+                            android:text="uplod picture interior"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+
+                <android.support.v7.widget.CardView
+                    android:visibility="gone"
+                    android:id="@+id/cardviewinter"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/interiortxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Picture Interior"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    android:id="@+id/interiorpics"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                   <HorizontalScrollView
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content">
+
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp">
+                        <ImageView
+                            android:id="@+id/interpic1"
+                            android:layout_weight="1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+
+                            <ImageView
+                                android:id="@+id/interpic2"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                            <ImageView
+                                android:id="@+id/interpic3"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+
+                            <ImageView
+                                android:id="@+id/interpic4"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                            <ImageView
+                                android:id="@+id/interpic5"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                            <ImageView
+                                android:id="@+id/interpic6"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                            <ImageView
+                                android:id="@+id/interpic7"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                            <ImageView
+                                android:id="@+id/interpic8"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+
+                            <ImageView
+                                android:id="@+id/interpic9"
+                                android:layout_weight="1"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content" />
+
+                        </LinearLayout>
+
+
+                        </HorizontalScrollView>
+
+
+
+
+                </LinearLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/Timelineofandoverofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Timeline of Handover (in Days)"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/Lockinofficespace1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Lock in (in Years)"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/QuotedRentforFurnishedofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Quoted Rent for Furnished (INR / sq.ft. / month)"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textStyle="bold"
+                            android:id="@+id/ApprovalforLandPlotacquisitionfromofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Approval for Land/Plot acquisition from"
+                            android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textStyle="bold"
+                            android:id="@+id/StateLandDevelopmentAuthoritiesofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="State Land Development Authorities"
+                            android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <RadioGroup
+                    android:id="@+id/group2"
+                    android:theme="@style/Custom.TextInputLayout1"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/statelandyes"
+                            android:layout_weight="1"
+                            android:textSize="14dp"
+                            android:text="Yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/statelandno"
+                            android:textSize="14dp"
+                            android:layout_weight="1"
+                            android:text="No"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                </RadioGroup>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textStyle="bold"
+                            android:id="@+id/GramPanchayatofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gram Panchayat"
+                            android:textSize="18sp" />
+                    </android.support.v7.widget.CardView>
+                <RadioGroup
+                    android:id="@+id/group3"
+                    android:theme="@style/Custom.TextInputLayout1"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/gramyes"
+                            android:layout_weight="1"
+                            android:textSize="14dp"
+                            android:text="Yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/gramno"
+                            android:textSize="14dp"
+                            android:layout_weight="1"
+                            android:text="No"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                </RadioGroup>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textStyle="bold"
+                            android:id="@+id/MunicipalAuthoritiesofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Municipal Authorities "
+                            android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <RadioGroup
+                    android:id="@+id/group4"
+                    android:theme="@style/Custom.TextInputLayout1"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/muncipalyes"
+                            android:layout_weight="1"
+                            android:textSize="14dp"
+                            android:text="Yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/muncipalno"
+                            android:layout_weight="1"
+                            android:textSize="14dp"
+                            android:text="No"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                 </RadioGroup>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textStyle="bold"
+                            android:id="@+id/LicenseInformationofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="License Information"
+                            android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textStyle="bold"
+                            android:id="@+id/OccupancyCertificateofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Occupancy Certificate"
+                            android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+                    <RadioGroup
+                        android:id="@+id/group5"
+                        android:theme="@style/Custom.TextInputLayout1"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/occupacyyes"
+                            android:textSize="14dp"
+                            android:layout_weight="1"
+                            android:text="Yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/occupacyno"
+                            android:layout_weight="1"
+                            android:textSize="14dp"
+                            android:text="No"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textStyle="bold"
+                            android:id="@+id/NOCofFIREfromConcernAuthoritiesofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="NOC of FIRE from Concern Authorities"
+                            android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+                    <RadioGroup
+                        android:id="@+id/group6"
+                        android:theme="@style/Custom.TextInputLayout1"
+                        android:layout_marginTop="15dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <RadioButton
+                            android:id="@+id/nocyes"
+                            android:layout_weight="1"
+                            android:textSize="14dp"
+                            android:text="Yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/nocno"
+                            android:layout_weight="1"
+                            android:textSize="14dp"
+                            android:text="No"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </RadioGroup>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorwhite"
+                            android:layout_margin="5dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/OwnerDetailsofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Owner Details"/>
+                </android.support.v7.widget.CardView>
+
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/buttonbacground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/ownernameofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Name"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/companynameofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Company Name (Optional.)"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/Numberofficespace1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:maxLength="10"
+                            android:hint="Number"
+                            android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/EmailAddressofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Email Address"
+                            android:inputType="textEmailAddress" />
+                     </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center"
+                    android:layout_margin="5dp"
+                    android:background="#FF9C00"
+                    android:id="@+id/owner3officespace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add more owner" />
+            </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/managerdetailsofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Manager details"/>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/buttonbacground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/managercompanynameofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Company name"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/managernameofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Name"
+                            android:inputType="textPersonName" />
+                     </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/numbermanagerofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:maxLength="10"
+                            android:hint="Number"
+                            android:inputType="number" />
+                     </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/emailmanagerofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Email Address"
+                            android:inputType="textEmailAddress" />
+                     </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_margin="5dp"
+                    android:background="#FF9C00"
+                    android:id="@+id/manager3officespace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add more manager" />
+                </LinearLayout>
+
+
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/brokerdetailsofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Broker Details "/>
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:background="@drawable/buttonbacground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/brokercompanynameofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint=" Company Name"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/brokernameofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Name"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/numberbrokerofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:maxLength="10"
+                            android:hint="Number"
+                            android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/emailbrokerofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Email Address"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/feesbrokerofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Fees(%)"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/agredfeesbrokerofficespace"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="agred Fees(in months)"
+                            android:inputType="textPersonName" />
+                    </android.support.design.widget.TextInputLayout>
+                <Button
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_margin="5dp"
+                    android:background="#FF9C00"
+                    android:id="@+id/broker3officespace"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Add more broker" />
+                </LinearLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/OccupancyDetailsofficespace"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Occupancy Details"/>
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textStyle="bold"
+                            android:id="@+id/Statusofficespaceoccupacy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status"
+                            android:textSize="18sp"/>
+                </android.support.v7.widget.CardView>
+
+
+                        <Spinner
+                            android:id="@+id/Status2"
+                            android:background="@drawable/spinner_background"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+                        </Spinner>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/partavailable"
+                    android:orientation="vertical"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/buttonbacground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16dp"
+                        android:textStyle="italic"
+                        android:id="@+id/IfPartAvailableofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="If Part Available"/>
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/SpaceAvailableofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Space Available (in sq.ft.)"
+                        android:inputType="textPersonName" />
+                  </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/PartRentedtoofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Part Rented to"/>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/NameoftheCompanyofficespacepart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Name of the Company"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/ContactPersonNameofficespacepart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Contact Person Name"
+                        android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Designationofficespacepart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Designation"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/ContactNumberofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:maxLength="10"
+                        android:hint="Contact Number"
+                        android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Emailofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/AreaRentedofficespacepart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Area Rented (in sq.ft.)"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Floorofficespacepart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Floor"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Spaceavailableofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Space Available (in sq.ft.)"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/LockINExpiryofficespacepart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Lock-IN Expiry (Month/Year)"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/LeaseExpiryofficespacepart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Lease Expiry (Month/Year)"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Rentofficespacepart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Rent (INR / sq.ft. / month)"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/RentEscalationofficespacepart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Rent Escalation (%)"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/RentEscalationPeriodofficespacepart"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Rent Escalation Period (in Years)"
+                        android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textColor="@color/colorwhite"
+                        android:layout_margin="5dp"
+                        android:textStyle="bold"
+                        android:id="@+id/RentedbyGRPAPLofficespacepart"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rented by GRPAPL"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+
+
+
+                <RadioGroup
+                    android:id="@+id/group7"
+                    android:theme="@style/Custom.TextInputLayout1"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/grapalyes"
+                        android:layout_weight="1"
+                        android:textSize="14dp"
+                        android:text="Yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/grapaplno"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RadioGroup>
+                    <Button
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_margin="5dp"
+                        android:background="#FF9C00"
+                        android:id="@+id/occupantofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Add more occupant" />
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    android:orientation="vertical"
+                    android:id="@+id/ifrentad"
+                    android:background="@drawable/buttonbacground"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16dp"
+                        android:textStyle="italic"
+                        android:id="@+id/IfRentedofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="If Rented"/>
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/Rentedtoofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rented to"/>
+                </android.support.v7.widget.CardView>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/NameoftheCompanyofficespacerentedto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Name of the Company"
+                        android:inputType="textPersonName" />
+              </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/ContactPersonNameofficespacerentad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Contact Person Name"
+                        android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Designationofficespacerentadto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Designation"
+                        android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/ContactNumberofficespacerentad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:maxLength="10"
+                        android:hint="Contact Number"
+                        android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Emailofficespacerentad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/LockINExpiryofficespacerentad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Lock-IN Expiry (Month/Year)"
+                        android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/LeaseExpiryofficespacerentadto"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Lease Expiry (Month/Year)"
+                        android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/Rentofficespacerentad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Rent (INR / sq.ft. / month)"
+                        android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/RentEscalationofficespacerentad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Rent Escalation (%)"
+                        android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/RentEscalationPeriodofficespacerentad"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Rent Escalation Period (in Years)"
+                        android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_margin="5dp"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textStyle="bold"
+                        android:id="@+id/RentedbyGRPAPLofficespacepartrentadto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rented by GRPAPL"
+                        android:textSize="18sp" />
+                </android.support.v7.widget.CardView>
+            <RadioGroup
+                android:id="@+id/group8"
+                android:theme="@style/Custom.TextInputLayout1"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                    <RadioButton
+                        android:id="@+id/grpaplyes"
+                        android:layout_weight="1"
+                        android:textSize="14dp"
+                        android:text="Yes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <RadioButton
+                        android:id="@+id/grpaplno"
+                        android:textSize="14dp"
+                        android:layout_weight="1"
+                        android:text="No"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+            </RadioGroup>
+                    <Button
+                        android:layout_gravity="center"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_margin="5dp"
+                        android:background="#FF9C00"
+                        android:id="@+id/occupantofficespac"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=" Add  more occupant" />
+                </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:id="@+id/InvestmentSalesofficespace"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Investment Sales"/>
+                </android.support.v7.widget.CardView>
+
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/QuotedSalesPriceofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="Quoted Sales Price (INR / sq.ft.)"
+                        android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_marginTop="15dp"
+                android:layout_height="wrap_content"
+                android:theme="@style/Custom.TextInputLayout1">
+                    <EditText
+                        android:id="@+id/ROIofficespace"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentStart="true"
+                        android:ems="10"
+                        android:hint="ROI (in %)"
+                        android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+                <ProgressBar
+                    android:layout_gravity="center"
+                    android:id="@+id/ptogressbar"
+                    android:visibility="invisible"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+                    <Button
+                        android:id="@+id/submit"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="#FF9C00"
+                        android:text="submit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+</LinearLayout>

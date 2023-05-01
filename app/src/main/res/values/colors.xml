@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorblack">#0a0909</color>
+    <color name="colorredgrpapl">#9e1a1a</color>
+    <color name="colortoolbar">#ae2f99</color>
+    <color name="colorprofileback">#cc05fd91</color>
+    <color name="colorwhite">#ffffff</color>
+    <color name="colorPrimary">#FFC107</color>
+    <color name="colorPrimaryDark">#FFA000</color>
+    <color name="backgroundcolor">#fcfcfc</color>
+    <color name="lightgray">#fcfcfc</color>
+    <color name="deeppurple">#7c4dff</color>
+    <color name="yello">#ffb300</color>
+    <color name="green">#00bfa5</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkblue">#23283a</color>
+    <color name="testcolorblue">#152b38</color>
+    <color name="pink">#fe104d</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="black_overred">#f3d90303</color>
+    <color name="black_oversky">#f304f1f1</color>
+    <color name="bgclor">#efefef</color>
+
+</resources>

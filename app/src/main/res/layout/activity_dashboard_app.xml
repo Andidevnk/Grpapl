@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgclor"
+    android:orientation="vertical"
+    tools:context="com.example.nk.grpapl.Dashboard_app">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Toolbar
+            android:layout_centerVertical="true"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.pkmmte.view.CircularImageView
+                android:id="@+id/toolbarimages"
+                android:src="@drawable/app_logo"
+                android:layout_width="50dp"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="20dp"
+                android:gravity="left"
+                android:id="@+id/empnametextview"
+                android:layout_marginLeft="5dp"
+                android:textSize="20dp"
+                android:textColor="@color/colorwhite"
+                android:layout_toRightOf="@id/toolbarimages"
+                android:layout_width="200dp"
+                android:layout_height="50dp" />
+        </Toolbar>
+    </RelativeLayout>
+
+    <GridView
+        android:clickable="true"
+        android:id="@+id/dashboardgrid"
+        android:numColumns="2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

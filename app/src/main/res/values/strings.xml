@@ -1,0 +1,119 @@
+<resources>
+    <string name="app_name">GRPAPL</string>
+    <string name="forgot_password">Forgot Your password</string>
+    <string-array name="Propertytypes">
+        <item>Choose type</item>
+        <item>Land</item>
+        <item>Office Space</item>
+        <item>serviced office</item>
+        <item>warehouse</item>
+    </string-array>
+
+    <array name="cities">
+        <item>Select itms</item>
+    </array>
+
+    <string-array name="Propertytypes1">
+        <item>Choose type</item>
+        <item>Land</item>
+        <item>Office Space</item>
+        <item>serviced office</item>
+        <item>warehouse</item>
+    </string-array>
+    <string-array name="AirConditoningPropertySpecification">
+        <item>Choose</item>
+        <item>Chiller Plant</item>
+        <item>Ductable Splits</item>
+        <item>NO AC</item>
+    </string-array>
+    <string-array name="land">
+        <item>Choose</item>
+        <item>Available</item>
+        <item>Part Available</item>
+        <item>Sold</item>
+    </string-array>
+    <string-array name="officespaceusage">
+        <item>Choose</item>
+        <item>Any (Commercial/Corporate)</item>
+        <item>IT/ ITES</item>
+        <item>Institutional</item>
+        <item>Industrial</item>
+        <item>SEZ IT/ITES</item>
+        <item>SEZ NON - IT/ITES</item>
+    </string-array>
+    <string-array name="Status">
+        <item>Choose</item>
+        <item>Bare-Shell </item>
+        <item>Warm-Shell </item>
+        <item>Furnished</item>
+    </string-array>
+    <string-array name="Status2">
+        <item>Choose</item>
+        <item>Available</item>
+        <item>Part Available</item>
+        <item>Rented</item>
+    </string-array>
+    <string-array name="category">
+
+        <item>Choose</item>
+        <item>Serviced Office</item>
+        <item> Business Cente</item>
+        <item> Coworking</item>
+    </string-array>
+    <string-array name="Workstationtype">
+        <item>Choose</item>
+        <item>Open - Dedicated</item>
+        <item> Open - Shared </item>
+        <item>Enclosed</item>
+    </string-array>
+    <string-array name="carparking">
+        <item>Choose</item>
+        <item>None</item>
+        <item>Inside the Building </item>
+        <item>Outside the Building</item>
+    </string-array>
+    <string-array name="facilitytype">
+
+        <item>Choose</item>
+        <item>Independent Facility </item>
+        <item>Shared Facility</item>
+        <item> Logistic Park</item>
+
+    </string-array>
+    <string-array name="statusofspace">
+        <item>Choose</item>
+        <item>Built to Suit</item>
+        <item>Ready 2 Move</item>
+    </string-array>
+    <string-array name="Floor">
+        <item>Choose</item>
+        <item>Ground</item>
+        <item>First</item>
+        <item>Second</item>
+        <item>Third</item>
+    </string-array>
+    <string-array name="statuswarehouse">
+        <item>Choose</item>
+        <item>Available</item>
+        <item>Part Available</item>
+        <item>Rented</item>
+    </string-array>
+    <string-array name="commercialstatus">
+        <item>choose</item>
+        <item>Bareshell </item>
+        <item>Warmshell </item>
+        <item>Fitted-Out</item>
+    </string-array>
+    <string name="underline">
+        <u>Forgot password?</u>
+    </string>
+    <string-array name="landUsagesCanbechagedto">
+        <item> Select Land Usages Can be changed to</item>
+        <item>Land Usages can be changed To</item>
+    </string-array>
+    <string-array name="currentLanUsagesLicense">
+        <item> Select Current Land Usages License</item>
+        <item>Current Land Usages License</item>
+    </string-array>
+    <array name="states"></array>
+</resources>

@@ -1,0 +1,1005 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nk.grpapl.Property_specification_form">
+
+
+            <LinearLayout
+                    android:layout_marginRight="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="15dp">
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/buildingname"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Building Name"
+                            android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/buildingaddress"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Address"
+                            android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+
+                <Spinner
+                    android:id="@+id/statespinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:entries="@array/states"
+                    android:background="@drawable/spinner_background">
+
+                </Spinner>
+
+                <Spinner
+                    android:id="@+id/cityspinner"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/spinner_background"
+                    android:entries="@array/cities">
+
+                </Spinner>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/pin"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Pin"
+                            android:inputType="textPersonName" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:id="@+id/geoloaction"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="GeoLocation" />
+                </android.support.v7.widget.CardView>
+
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/latitude"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_centerVertical="true"
+                            android:ems="10"
+                            android:editable="false"
+                            android:hint="Latitude"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_marginTop="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/longitute"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Longitude"
+                            android:editable="false"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/insidepicture"
+                            android:clickable="true"
+                            android:text="picture(inside)"
+                            android:background="#FF9C00"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/outsidepicture"
+                            android:clickable="true"
+                            android:text="picture(outside)"
+                            android:background="#FF9C00"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/picinsidetext"
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:id="@+id/pictureindise"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Picture Inside" />
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/insidelayout"
+                    android:visibility="gone"
+                    android:background="@drawable/buttonbacground"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+
+                        android:background="@drawable/buttonbacground"
+                        android:id="@+id/pic1"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+
+                    <ImageView
+
+                        android:background="@drawable/buttonbacground"
+                        android:layout_weight="1"
+                        android:id="@+id/pic2"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                    <ImageView
+
+                        android:background="@drawable/buttonbacground"
+                        android:layout_weight="1"
+                        android:id="@+id/pic3"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/picoutsidetxt"
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:id="@+id/pictureouside"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Picture Outside" />
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/outsidelayout"
+                    android:visibility="gone"
+                    android:background="@drawable/buttonbacground"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:background="@drawable/buttonbacground"
+                        android:id="@+id/pic1outside"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+
+                    <ImageView
+                        android:background="@drawable/buttonbacground"
+                        android:layout_weight="1"
+                        android:id="@+id/pic2outside"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                    <ImageView
+                        android:background="@drawable/buttonbacground"
+                        android:layout_weight="1"
+                        android:id="@+id/pic3outside"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/totalnumberfloorheading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total number of floor" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/numberoffloorindex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentStart="true"
+                            android:ems="10"
+                            android:hint="Total number of floor(including Ground)"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/totalnumberbasementheading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total number of floor" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/numberofbasementindex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Total number of basement"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/Totalarea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Total area" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/totalareaindex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Total area"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorwhite"
+                            android:layout_margin="5dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/typicalarea"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Typical floor area" />
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/typicalareaindex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Typical floor area"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/Floorplan"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Floor plan" />
+                </android.support.v7.widget.CardView>
+
+
+
+                <LinearLayout
+                    android:layout_marginTop="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                        <Button
+                            android:id="@+id/upload1"
+                            android:clickable="true"
+                            android:text="Uploading file1"
+                            android:background="#FF9C00"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                        <Button
+                            android:id="@+id/upload2"
+                            android:clickable="true"
+                            android:text="Uploading file2"
+                            android:background="#FF9C00"
+                            android:layout_weight="1"
+                            android:layout_margin="5dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+
+                 </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/uploadinsidetext"
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:id="@+id/uploadfile1txt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Picture Inside" />
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/upload1layout"
+                    android:visibility="gone"
+                    android:background="@drawable/buttonbacground"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+
+                        android:background="@drawable/buttonbacground"
+                        android:id="@+id/pic11"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+
+                    <ImageView
+
+                        android:background="@drawable/buttonbacground"
+                        android:layout_weight="1"
+                        android:id="@+id/pic22"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                    <ImageView
+
+                        android:background="@drawable/buttonbacground"
+                        android:layout_weight="1"
+                        android:id="@+id/pic33"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+
+                </LinearLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:id="@+id/upload2sidetxt"
+                    android:visibility="gone"
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_margin="5dp"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:id="@+id/upload2ousidetxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Picture Outside" />
+                </android.support.v7.widget.CardView>
+
+                <LinearLayout
+                    android:id="@+id/upload2layout"
+                    android:visibility="gone"
+                    android:background="@drawable/buttonbacground"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp">
+
+                    <ImageView
+                        android:background="@drawable/buttonbacground"
+                        android:id="@+id/pic111"
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+
+                    <ImageView
+                        android:background="@drawable/buttonbacground"
+                        android:layout_weight="1"
+                        android:id="@+id/pic222"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+                    <ImageView
+                        android:background="@drawable/buttonbacground"
+                        android:layout_weight="1"
+                        android:id="@+id/pic333"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp" />
+
+                </LinearLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                        android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/caption"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Caption"
+                            android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/plan"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Plan"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorwhite"
+                            android:layout_margin="5dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/commonarea"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Common Area Maintenance"/>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/charges"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Charges"
+                            android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/hoursofoperation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Hours of operation"
+                            android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/chargesbeyond"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Charges beyond operations hours"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorwhite"
+                            android:layout_margin="5dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/csrparkingcharges"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Car parking charges"/>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/carparkingindex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Car parking charges"
+                            android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorwhite"
+                            android:layout_margin="5dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/additionalcrparkingcharges"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Additional Car parking charges"/>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/Additionalcarparkingindex"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint=" Additional car parking charges"
+                            android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/warmshellspecification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="WarmshellSpecification"/>
+                </android.support.v7.widget.CardView>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/Airconditioningpropertyspecification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Air Conditioning"/>
+                </android.support.v7.widget.CardView>
+
+
+                        <Spinner
+                            android:background="@drawable/spinner_background"
+                            android:id="@+id/airconditioningproperty"
+                            android:layout_marginTop="15dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp">
+
+                        </Spinner>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/Electricity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Electricity"
+                            android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/Electricitycharges"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Electricity charges"
+                            android:inputType="textPersonName" />
+                </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/colorwhite"
+                            android:layout_margin="5dp"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/PowerBackuppropertyspecification"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Power backup"/>
+                </android.support.v7.widget.CardView>
+
+
+                <RadioGroup
+                    android:id="@+id/power"
+                    android:theme="@style/Custom.TextInputLayout1"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <RadioButton
+                            android:id="@+id/pyes"
+                            android:textSize="14dp"
+                            android:layout_weight="1"
+                            android:text="Yes"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                        <RadioButton
+                            android:id="@+id/pno"
+                            android:layout_weight="1"
+                            android:textSize="14dp"
+                            android:text="No"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                </RadioGroup>
+
+
+                <android.support.v7.widget.CardView
+                    android:layout_marginTop="15dp"
+                    app:cardBackgroundColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_margin="5dp"
+                            android:textColor="@color/colorwhite"
+                            android:textSize="16dp"
+                            android:textStyle="bold"
+                            android:id="@+id/verify"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Verified by(Building reprsentative)"/>
+                </android.support.v7.widget.CardView>
+
+
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/Name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Name"
+                            android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+                 <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/Designation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Designation"
+                            android:inputType="textPersonName" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/Email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:hint="Email address"
+                            android:inputType="textEmailAddress" />
+                 </android.support.design.widget.TextInputLayout>
+
+
+
+                 <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                     android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/mobilenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:maxLength="10"
+                            android:hint="Mobile number"
+                            android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+
+
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:theme="@style/Custom.TextInputLayout1">
+                        <EditText
+                            android:id="@+id/fixedlinenumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentEnd="true"
+                            android:ems="10"
+                            android:maxLength="10"
+                            android:hint="Fixed Line Number"
+                            android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+
+                <Button
+                    android:id="@+id/res2"
+                    android:clickable="true"
+                    android:text="Add Building Representative "
+                    android:background="#FF9C00"
+                    android:layout_margin="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+                <ProgressBar
+                    android:layout_gravity="center"
+                    android:id="@+id/ptogressbarproperty"
+                    android:visibility="invisible"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp" />
+
+                <Button
+                            android:clickable="true"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginTop="10dp"
+                            android:id="@+id/nexttocommercial"
+                            android:background="#FF9C00"
+                            android:text="Next"
+                            android:layout_alignParentEnd="true"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                 </LinearLayout>
+             </ScrollView>
+
+    </LinearLayout>
+</LinearLayout>

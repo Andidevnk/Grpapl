@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.nk.grpapl.New_requirment_form">
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_margin="5dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Spinner
+            android:id="@+id/spinnercurrentland"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner_background"></Spinner>
+
+
+        <Spinner
+            android:id="@+id/spinnerlanduser"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/spinner_background"></Spinner>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/colorPrimary">
+
+            <TextView
+                android:id="@+id/LLOpentoInvestforCLUland"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="LL Open to Invest for CLU"
+                android:textColor="@color/colorwhite"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+
+
+        <RadioGroup
+            android:id="@+id/llgroupreqnew"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal"
+            android:theme="@style/Custom.TextInputLayout1">
+
+            <RadioButton
+                android:id="@+id/llyesnew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Yes"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/llnonew"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="No"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+        <TextView
+
+            android:id="@+id/fsi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="FSI(Floor space Index)"
+            android:textColor="@color/colorwhite"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/Custom.TextInputLayout1"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/fromfsi"
+                android:hint="From"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/Custom.TextInputLayout1"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/tofsi"
+                android:hint="To"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+        <TextView
+
+            android:id="@+id/jamabandi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Jamabandi Year"
+            android:textColor="@color/colorwhite"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/Custom.TextInputLayout1"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/fromjamabandi"
+                android:hint="From"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/Custom.TextInputLayout1"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/tojamabandi"
+                android:hint="To"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+        <TextView
+
+            android:id="@+id/landsizew"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Land Size"
+            android:textColor="@color/colorwhite"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/Custom.TextInputLayout1"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/fromlandsize"
+                android:hint="From"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/Custom.TextInputLayout1"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/tolandsize"
+                android:hint="To"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:cardBackgroundColor="@color/colorPrimary">
+        <TextView
+
+            android:id="@+id/frontage1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Frontage"
+            android:textColor="@color/colorwhite"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+    </android.support.v7.widget.CardView>
+
+    <LinearLayout
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/Custom.TextInputLayout1"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/fromfrontage"
+                android:hint="From"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:theme="@style/Custom.TextInputLayout1"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/tofrontage"
+                android:hint="To"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            app:cardBackgroundColor="@color/colorPrimary">
+            <TextView
+
+                android:id="@+id/requirmentfrom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="Requirment From"
+                android:textColor="@color/colorwhite"
+                android:textSize="16dp"
+                android:textStyle="bold" />
+        </android.support.v7.widget.CardView>
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:theme="@style/Custom.TextInputLayout1">
+            <EditText
+                android:id="@+id/comname"
+                android:inputType="textPersonName"
+                android:hint="Company name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:theme="@style/Custom.TextInputLayout1">
+
+            <EditText
+                android:id="@+id/cotpersoanname"
+                android:hint="Contact person name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:theme="@style/Custom.TextInputLayout1">
+
+
+            <EditText
+                android:maxLength="10"
+                android:inputType="number"
+                android:hint="Number"
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/Custom.TextInputLayout1"
+            android:layout_marginTop="15dp">
+
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/emailperson"
+                android:hint="Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <Button
+        android:text="submit"
+        android:background="#FF9C00"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="40dp"
+        android:id="@+id/submittion"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_gravity="center"
+            android:id="@+id/ptogressbarproperty"
+            android:visibility="invisible"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_width="60dp"
+            android:layout_height="40dp" />
+    </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

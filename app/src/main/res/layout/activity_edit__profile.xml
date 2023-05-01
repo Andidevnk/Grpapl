@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    tools:context="com.example.nk.grpapl.Edit_Profile">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+                 <ImageView
+                     android:scaleType="fitXY"
+                     android:src="@drawable/editimage"
+                     android:id="@+id/Editpicture"
+                     android:layout_width="150dp"
+                     android:layout_height="150dp"/>
+                <ImageView
+                    android:background="@color/colorPrimary"
+                    android:clickable="true"
+                    android:id="@+id/edit"
+                    android:src="@drawable/ic_edit_black_24dp"
+                    android:layout_marginLeft="110dp"
+                    android:layout_alignBottom="@id/Editpicture"
+                    android:layout_width="30dp"
+                    android:layout_height="40dp" />
+            </RelativeLayout>
+
+
+            <ProgressBar
+                android:id="@+id/progressBar_serviced"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:layout_weight="1" />
+
+
+            <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:theme="@style/Custom.TextInputLayout1">
+
+        <EditText
+            android:hint=" First Name"
+            android:id="@+id/Editfirstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+
+                <EditText
+                    android:hint=" Last Name"
+                    android:id="@+id/Editlastname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:theme="@style/Custom.TextInputLayout1">
+
+        <EditText
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:id="@+id/Editemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:theme="@style/Custom.TextInputLayout1">
+
+
+        <EditText
+            android:maxLength="10"
+            android:inputType="number"
+            android:hint="Number"
+            android:id="@+id/Editnumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+    <TextView
+        android:layout_margin="5dp"
+        android:textColor="@color/colorwhite"
+        android:id="@+id/Editcurrentaddress"
+        android:text="Current Address"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:theme="@style/Custom.TextInputLayout1">
+
+        <EditText
+            android:id="@+id/Editaddress"
+            android:hint="Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:theme="@style/Custom.TextInputLayout1">
+
+        <EditText
+            android:id="@+id/Edirtlandmark"
+            android:hint="Landmak"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+
+            <Spinner
+                android:id="@+id/spinner_staes_serviceoffic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/states"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spinner_cities_serviceoffic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/cities"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:theme="@style/Custom.TextInputLayout1">
+
+        <EditText
+            android:id="@+id/Editpin"
+            android:hint="Pin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorwhite"
+                    android:id="@+id/Editpermanetaddress"
+                    android:text="Permanent Address"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+
+                <EditText
+                    android:id="@+id/Editpermanaddress"
+                    android:hint="Address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+
+                <EditText
+                    android:id="@+id/Edirtpermannetlandmark"
+                    android:hint="Landmak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <Spinner
+                android:id="@+id/spinner_staes_permanet_serviceoffic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/states"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+
+            <Spinner
+                android:id="@+id/spinner_cities_permanet_serviceoffic"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:entries="@array/cities"
+                android:background="@drawable/spinner_background">
+
+            </Spinner>
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:theme="@style/Custom.TextInputLayout1">
+
+                <EditText
+                    android:id="@+id/Editpermanentrpin"
+                    android:hint="Pin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.design.widget.TextInputLayout>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_marginTop="15dp"
+                app:cardBackgroundColor="@color/colorPrimary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_margin="5dp"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:text="Bank Details"
+                    android:id="@+id/EditbankingDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </android.support.v7.widget.CardView>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:theme="@style/Custom.TextInputLayout1">
+    <EditText
+        android:id="@+id/Editaccountname"
+        android:hint="Name of the Bank Account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+   <android.support.design.widget.TextInputLayout
+       android:layout_marginTop="15dp"
+       android:theme="@style/Custom.TextInputLayout1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+
+       <EditText
+           android:id="@+id/Editsavingaccount"
+           android:hint="Saving Account number"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content" />
+   </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:theme="@style/Custom.TextInputLayout1">
+
+        <EditText
+            android:id="@+id/Editifsccode"
+            android:hint="IFSC CODE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </android.support.design.widget.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/submiteditprofile"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:background="#FF9C00"
+                android:text="Submit"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
